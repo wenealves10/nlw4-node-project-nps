@@ -1,8 +1,12 @@
+import "reflect-metadata";
 import express from "express";
+import "./database";
+import { router } from "./routes";
 
 const app = express();
 
-app.get("/", (req, res) => res.json({ rockeaseat: "Hello World NLW 4" }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(router);
 
-// eslint-disable-next-line no-console
 app.listen(3000, () => console.log("Server is running!!"));
