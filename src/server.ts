@@ -1,9 +1,8 @@
-import express from 'express';
+import express from 'express'
 
-const app = express();
+const app = express()
 
-app.get('/', (req, res) => {
-  return res.json({rockeaseat: 'Hello World NLW 4' });
-})
+app.get('/', (req, res) => res.json({ rockeaseat: 'Hello World NLW 4' }))
 
-app.listen(3000, () => console.log('Server is running!!'));
+// eslint-disable-next-line no-console
+app.listen(3000, () => console.log('Server is running!!'))
