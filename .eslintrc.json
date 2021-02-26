@@ -25,6 +25,7 @@
       "class-methods-use-this": "off",
       "no-console": "off",
       "camelcase": "off",
-      "no-undef":"off"
+      "no-undef":"off",
+      "no-unused-vars": "warn"
     }
 }
